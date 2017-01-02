@@ -1,0 +1,92 @@
+.post-title {
+    font-family: "Roboto Slab", "Open Sans", arial, sans-serif;
+    text-transform: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab", "Open Sans", arial, sans-serif;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.site-nav a
+{
+    font-family: "Open Sans Condensed";
+    font-size: 20px;
+}
+.site-nav a:hover
+{
+    border-bottom: 1px solid #900;
+}
+ul.site-nav
+{
+    display: inline;
+    margin-left: 10px;
+}
+
+ul, ol
+{
+    list-style-position: outside;
+    margin-left: 30px;
+}
+
+a, code, 
+.post-date a:hover,
+.blog-description a:hover,
+.post-stub a:hover,
+.author-meta a:hover
+{
+    color: #900;
+}
+
+.post-content a:hover
+{
+    border-bottom: 1px dotted #900;
+}
+
+.post-description
+{
+    text-transform: none;
+}
+
+.post-date:after, .blog-description:after
+{
+    border-bottom: 0px;
+    margin: 20px auto 0;
+}
+
+.site-title a,
+.button-square, 
+.button:hover, 
+.share a,
+.newer-posts,
+.older-posts,
+.post-stub a:hover .post-stub-tag,
+
+#nprogress .bar
+{
+    background: #900;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #900, 0 0 5px #900; }
+
+#nprogress .spinner-icon {
+  border-top-color: #900;
+  border-left-color: #900; }
+
+
+blockquote {
+    border-left: 10px solid #F0F2F4;
+}
+
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #424242;
+}

@@ -1,0 +1,21 @@
+name = "hugo-noteworthy"
+license = "MIT"
+licenselink = "https://github.com/jbub/ghostwriter/blob/master/LICENSE.md"
+description = "A feature-rich Hugo theme for writing technical notes, based on the simple AJAX Ghostwriter theme."
+homepage = "https://github.com/shaneleonard/hugo-noteworthy"
+tags = ["blog", "technical", "personal"]
+features = ["blog", "technical", "personal"]
+min_version = 0.15
+
+[author]
+    name = "Shane Leoanrd"
+    homepage = "https://github.com/shaneleonard"
+
+[original]
+    author = "Juraj Bubniak"
+    homepage = "https://github.com/jbub"
+
+[original]
+    author = "roryg"
+    homepage = "http://ghost.jollygoodthemes.com/ghostwriter/"
+    repo = "https://github.com/roryg/ghostwriter"

@@ -1,0 +1,8 @@
+<li class="site-nav-item">
+    <a title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}">Home</a>
+</li>
+{{ range .Site.Menus.main.ByWeight }}
+    <li class="site-nav-item">
+        <a title="{{ .Name }}" href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+{{ end }}

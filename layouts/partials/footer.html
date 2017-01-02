@@ -1,0 +1,90 @@
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                    <a class="button-square" href="{{ .Site.BaseURL }}index.xml"><i class="fa fa-rss"></i></a>
+                    {{ with .Site.Params.twitter }}
+                        <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="{{ . }}">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    {{ end }}
+                    {{ with .Site.Params.gitlab }}
+                        <a class="button-square button-social hint--top" data-hint="Gitlab" title="Gitlab" href="{{ . }}">
+                            <i class="fa fa-gitlab"></i>
+                        </a>
+                    {{ end }}
+                    {{ with .Site.Params.github }}
+                        <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="{{ . }}">
+                            <i class="fa fa-github-alt"></i>
+                        </a>
+                    {{ end }}
+                    {{ with .Site.Params.stackoverflow }}
+                        <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="{{ . }}">
+                            <i class="fa fa-stack-overflow"></i>
+                        </a>
+                    {{ end }}
+                    {{ with .Site.Params.linkedin }}
+                        <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="{{ . }}">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    {{ end }}
+                    {{ with .Site.Params.gplus }}
+                        <a class="button-square button-social hint--top" data-hint="Google+" title="Google+" href="{{ . }}">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    {{ end }}
+                </div>
+
+                <p class="footer-copyright">
+                <span>&copy; {{ .Site.LastChange.Format "2006" }} {{ .Site.Copyright }} / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span>Modified <a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="{{ .Site.BaseURL }}js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+        <script src="{{ .Site.BaseURL }}js/jquery.fitvids.js"></script>
+        <script src="{{ .Site.BaseURL }}js/scripts.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          messageStyle: 'none',
+          tex2jax: {
+            preview: 'none',
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: { equationNumbers: { autoNumber: "AMS" },
+                 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+          }
+        });
+        </script>
+
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Queue(function() {
+            // Fix <code> tags after MathJax finishes running. This is a
+            // hack to overcome a shortcoming of Markdown. Discussion at
+            // https://github.com/mojombo/jekyll/issues/199
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+        </script>
+    </body>
+</html>

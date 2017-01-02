@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+
+<div class="container">
+    {{ if .Site.Params.intro }}
+        <header class="post-header">
+            <h1 class="post-title" itemprop="name">{{ .Site.Params.headline }}</h1>
+            <p>{{ .Site.Params.description }}</p>
+        </header>
+    {{ end }}
+    <p class="error">Golly gee willikers, Batman&mdash;this page does not exist! Looks like we'll need to return to the <a href="{{ .Site.BaseURL }}">Batcave</a>.</p>
+</div>
+
+{{ partial "footer.html" . }}
