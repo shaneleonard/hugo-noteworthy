@@ -1,11 +1,14 @@
 <li class="post-stub">
     <a href="{{ .Permalink }}">
         <h4 class="post-stub-title">{{ .Title }}</h4>
-        {{ if .Description }}
-            <p class="post-stub-description">{{ .Description }}</p>
-        {{ end }}
+        <time class="post-stub-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
         {{ with .Params.featured }}
-            <span class="post-stub-tag">Featured</span>
+            <span class="post-stub-tag-featured">Featured</span>
+        {{ end }}
+        {{ if .Params.tags }}
+            {{ range .Params.tags }}
+                <span class="post-stub-tag">{{ . }}</span>
+            {{ end }}
         {{ end }}
     </a>
 </li>

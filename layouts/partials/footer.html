@@ -57,8 +57,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
         <script src="{{ .Site.BaseURL }}js/jquery.fitvids.js"></script>
         <script src="{{ .Site.BaseURL }}js/scripts.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
           messageStyle: 'none',
@@ -74,7 +74,6 @@
           }
         });
         </script>
-
         <script type="text/x-mathjax-config">
           MathJax.Hub.Queue(function() {
             // Fix <code> tags after MathJax finishes running. This is a
@@ -85,6 +84,12 @@
                 all[i].SourceElement().parentNode.className += ' has-jax';
             }
         });
+        </script>
+
+        <script type="text/javascript" src="https://cdn.rawgit.com/knsv/mermaid/6.0.0/dist/mermaid.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/knsv/mermaid/6.0.0/dist/mermaid.css">
+        <script>
+            mermaid.initialize({startOnLoad:true});
         </script>
     </body>
 </html>

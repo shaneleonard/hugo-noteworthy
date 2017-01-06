@@ -11,7 +11,8 @@
     <ol class="post-list">
         {{ $pag := .Paginate (where .Data.Pages "Type" "post") }}
         {{ range $pag.Pages }}
-            {{ partial "post-stub.html" . }}
+            {{ partial "post-preview.html" . }}
+            <hr>
         {{ end }}
     </ol>
 

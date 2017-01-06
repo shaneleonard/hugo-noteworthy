@@ -3,6 +3,14 @@
     text-transform: none;
 }
 
+.post-preview-title {
+    font-size: 36px;
+}
+
+.post-preview-description {
+    font-style: italic;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto Slab", "Open Sans", arial, sans-serif;
     margin-bottom: 12px;
@@ -10,6 +18,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 30px;
+}
+
+.post-preview-title a {
+    color: #707070;
+}
+.post-preview-title a:hover {
+    color: #900;
 }
 
 .site-nav a
@@ -90,3 +105,54 @@ code.has-jax {
     border: inherit;
     color: #424242;
 }
+
+.post-stub-tag {
+  background: #707070;
+  border-radius: 3px;
+  color: #FFF;
+  float: right;
+  font-size: 10px;
+  margin: 7px 1px 0;
+  padding: 0 5px;
+  text-transform: uppercase; }
+
+.post-stub-tag-featured {
+  background: #9BD7D5;
+  border-radius: 3px;
+  color: #FFF;
+  float: right;
+  font-size: 10px;
+  margin: 7px 3px 0;
+  padding: 0 5px;
+  text-transform: uppercase; }
+
+.post-preview-tag {
+  background: #707070;
+  border-radius: 3px;
+  color: #FFF;
+  font-size: 10px;
+  float: right;
+  margin: 0px 1px 0;
+  padding: 0 5px;
+  text-transform: uppercase; }
+
+.post-preview-tag a {
+  background: #707070;
+  color: #FFF;
+  text-transform: uppercase; }
+
+.post-preview-tag:hover {
+  background: #900;
+}
+.post-preview-tag a:hover {
+  background: #900;
+}
+
+.post-preview-date {
+  color: #AEADAD;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 5px 0 0;} 
+  .post-preview-date a { color: #AEADAD; }
+  .post-preview-date a:hover { color: #F03838; }

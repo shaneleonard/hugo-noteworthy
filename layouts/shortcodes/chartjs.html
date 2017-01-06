@@ -1,0 +1,8 @@
+<canvas id="{{ .Get 0 }}" width="{{ .Get 1 }}" height="{{ .Get 2 }}"></canvas>
+<script>
+
+var ctx = document.getElementById("{{ .Get 0 }}");
+var {{ .Get 0 | safeJS }}Chart = new Chart(ctx, {
+    {{ .Inner | safeJS }}
+});
+</script>

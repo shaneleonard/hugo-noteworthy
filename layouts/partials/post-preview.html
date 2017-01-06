@@ -1,0 +1,19 @@
+<h1 class="post-preview-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+{{ with .Description }}
+    <p class="post-preview-description">{{ . }}</p>
+{{ end }}
+{{ if .Params.tags }}
+    {{ range .Params.tags }}
+        <span class="post-preview-tag"><a href="/tags/{{ . | urlize }}/">{{ . }}</a></span>
+    {{ end }}
+{{ end}}
+<p class="post-preview-date">
+    <span>Published <time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "Jan 2, 2006" }}</time></span>
+</p>
+<div class="post-content clearfix" itemprop="articleBody">
+    {{ with .Params.Image }}
+        <img class="post-featured-image" src="{{ . }}">
+    {{ end }}
+
+    {{ .Content }}
+</div>
